@@ -5,20 +5,63 @@
     <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="Res\style.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      body,button, input, select, textarea,h2, h3, h4, h5, h6 { font-family: YouYuan;}
+    </style>
+    <script>
+      $(document).ready(function(){
+        $("#subt").hide();
+        $("#title2").hide();
+        $("#e1").hide();
+        $("#e2").hide();
+        $("#e3").hide();
+        $("#e4").hide();
+        $("#title1").animate({fontSize:'+=2em'},2000,function(){$("#subt").fadeIn(2500);});
+  		$("#leadpage").mouseover(function(){
+    		$("#leadin").animate({fontSize:'2em'},"fast");
+  		});
+        $("#pg1").mouseover(function(){
+          $("#pg1").animate({ opacity:'1'});
+        });
+        $("#pg2").mouseover(function(){
+          $("#pg1").animate({ opacity:'0.3'});
+          $("#pg2").animate({ opacity:'1'});
+        });
+        $("#pg3").mouseover(function(){
+          $("#pg2").animate({ opacity:'0.3'});
+          $("#pg3").animate({ opacity:'1'});
+        });
+        $("#pg4").mouseover(function(){
+          $("#pg3").animate({ opacity:'0.3'});
+          $("#pg4").animate({ opacity:'1'});
+        });
+        $("#pg5").mouseover(function(){
+            $("#pg4").animate({ opacity:'0.3'});
+            $("#pg5").animate({ opacity:'1'});     
+            $("#title2").show("slow",function(){$("#e1").fadeIn(3000,function(){
+        $("#e2").fadeIn(3000,function(){
+            $("#e3").fadeIn(3000,function(){
+                $("#e4").fadeIn(3000);
+            });
+        });
+    });});
+        });
+	  });
+    </script>
   </head><body>
     <div class="cover">
       <div class="cover-image" style="background-image : url('https://unsplash.imgix.net/photo-1422022098106-b3a9edc463af?w=1024&amp;q=50&amp;fm=jpg&amp;s=bbe0beb19ba846e0de37abd1f63acf13')"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h1>Welcome back to home</h1>
-            <p>太原五中243班-2013~2016</p>
+            <h1 id="title1">Welcome back to home</h1>
+            <p id="subt">太原五中243班-2013~2016</p>
             <br>
           </div>
         </div>
       </div>
     </div>
-    <div class="section section-info">
+    <div class="section section-primary" id="leadpage">
       <div class="background-image" style="background-image : url('https://unsplash.imgix.net/reserve/N13RIliTTASBbuYyszgq_P9020914-54.jpg?w=1024&amp;q=50&amp;fm=jpg&amp;s=9c914a5c9288fc66860fde2c45521ff4')"></div>
       <div class="container">
         <div class="row">
@@ -27,7 +70,7 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-12">
-                    <blockquote>
+                    <blockquote id="leadin">
                       <p>——太原五中243班官方网站</p>
                       <footer>鸣谢：dzz同学，各位老师</footer>
                     </blockquote>
@@ -39,7 +82,7 @@
         </div>
       </div>
     </div>
-    <div class="section section-info">
+    <div class="section" id="pg1">
       <div class="background-image" style="background-image : url('https://unsplash.imgix.net/photo-1422513391413-ddd4f2ce3340?w=1024&amp;q=50&amp;fm=jpg&amp;s=282e5978de17d6cd2280888d16f06f04')"></div>
       <div class="container">
         <div class="row">
@@ -58,14 +101,14 @@
             </div>
             <blockquote>
               <p>二龙山踏青</p>
-              <footer>&nbsp;(左起) 段钧天 杜宇豪 成中涵 张学华 张宇萱 赵至哲 贾琼 &nbsp;张雨昂 张永昌 范知其&nbsp;
-                <br>翟邵融 刘泽凯 杨浩楠 张自远 王瑞轩 杨宇晨</footer>
+              <footer>&nbsp;(左起) 段钧天 杜宇豪 成中涵 张学华 张宇萱 赵至哲 贾琼 &nbsp;张雨昂 张永昌 范知其&nbsp; 翟邵融 刘泽楷
+                杨昊楠 张自远 王瑞轩 杨宇晨</footer>
             </blockquote>
           </div>
         </div>
       </div>
     </div>
-    <div class="section section-primary">
+    <div class="section" id="pg2">
       <div class="background-image" style="background-image : url('https://unsplash.imgix.net/photo-1423347834838-5162bb452ca7?w=1024&amp;q=50&amp;fm=jpg&amp;s=c255e589621f06513c1d123c7323fe9c')"></div>
       <div class="container">
         <div class="row">
@@ -89,8 +132,8 @@
         </div>
       </div>
     </div>
-    <div class="section section-primary">
-      <div class="background-image" style="background-image : url('https://unsplash.imgix.net/uploads/1412112828986a673b954/1d8ef901?w=1024&amp;q=50&amp;fm=jpg&amp;s=9c44bb02d0811d30403b18a15a70e6a2')"></div>
+    <div class="section section-primary" id="pg3">
+      <div class="background-image" style="background-image : url('https://unsplash.imgix.net/photo-1423439793616-f2aa4356b37e?w=1024&amp;q=50&amp;fm=jpg&amp;s=3b42f9c018b2712544debf4d6a4998ff')"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -98,8 +141,8 @@
               <div class="container">
                 <div class="row">
                   <div class="col-md-12">
-                    <div class="page-header">
-                      <h1>难忘记忆&nbsp;
+                    <div class="page-header text-danger">
+                      <h1 class="text-success">难忘记忆&nbsp;
                         <small>unforgettable experience</small>
                       </h1>
                     </div>
@@ -120,7 +163,7 @@
                     <div id="carousel-example" data-interval="false" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner">
                         <div class="item active">
-                          <img src="Img\省图书香.jpg">
+                          <img src="Img\省图书香.jpg" class="img-thumbnail">
                           <div class="carousel-caption">
                             <h2>省图书香</h2>
                           </div>
@@ -149,13 +192,13 @@
         </div>
       </div>
     </div>
-    <div class="section section-info">
-      <div class="background-image background-image-fixed" style="background-image : url('http://pingendo.github.io/pingendo-bootstrap/assets/blurry/800x600/7.jpg')"></div>
+    <div class="section section-warning" id="pg4">
+      <div class="background-image" style="background-image : url('https://unsplash.imgix.net/uploads/14129863345840df499fc/0165574c?w=1024&amp;q=50&amp;fm=jpg&amp;s=6e5127e797feb9b5a72f7ae4a0f3a89b')"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="text-center">我师</h1>
-            <p class="text-center">春蚕到死丝方尽，蜡炬成灰泪始干</p>
+            <h1 class="text-center text-primary">我师</h1>
+            <p class="text-center text-info">春蚕到死丝方尽，蜡炬成灰泪始干</p>
           </div>
         </div>
         <div class="row">
@@ -163,32 +206,48 @@
             <img src="Img\200.jpg" class="img-circle img-responsive">
           </div>
           <div class="col-md-4">
-            <h3 class="text-left">
+            <h3 class="text-left text-primary">
               <i class="fa fa-fw fa-lg fa-book"></i>张永昌
               <small>语文/班主任</small>
             </h3>
-            <p class="text-left">教学中，靠智慧激发学习兴趣，用爱心呵护学生成长；潜心探寻语言文字的无穷魅力，积极营造读书学习的精神特区。</p>
+            <p class="text-left text-primary">教学中，靠智慧激发学习兴趣，用爱心呵护学生成长；潜心探寻语言文字的无穷魅力，积极营造读书学习的精神特区。</p>
           </div>
           <div class="col-md-2">
             <img src="Img\路老师.jpg" class="img-circle img-responsive">
           </div>
           <div class="col-md-4">
-            <h3 class="text-left">
+            <h3 class="text-left text-primary">
               <i class="fa fa-fw fa-lg fa-circle-o"></i>路丘平
               <small>数学</small>
             </h3>
-            <p class="text-left">严谨认真，事实求是。没有证明的结论，就是无源之水、无本之木、无稽之谈。</p>
+            <p class="text-left text-primary">严谨认真，事实求是。没有证明的结论，就是无源之水、无本之木、无稽之谈。</p>
           </div>
         </div>
         <div class="row">
           <div class="col-md-12">
-            <a class="btn btn-default" data-toggle="modal" data-target="#myM">更多......</a>
+            <a class="btn btn-info" data-toggle="modal" data-target="#myM">更多......</a>
           </div>
         </div>
       </div>
-    </div><div class="cover"> <div class="cover-image" style="background-image : url('https://unsplash.imgix.net/photo-1421986527537-888d998adb74?w=1024&amp;q=50&amp;fm=jpg&amp;s=e633562a1da53293c4dc391fd41ce41d')"></div><div class="col-md-12 text-center"> <h1>I still remember&nbsp;<br>meeting all of you in&nbsp;Grade 7</h1> <p>不悔离别处，只恨太匆匆。<br>感谢每一位遇见的老师，引领我们走进知识的浩瀚星空；<br>感谢243班，让我们在最好地年华，认识最美的彼此；<br>感谢每一天，243班的全体一起度过的日子……</p><br><br> </div></div>
-    
-    <footer class="section section-primary">
+    </div>
+    <div class="cover" id="pg5">
+      <div class="cover-image" style="background-image : url('https://unsplash.imgix.net/photo-1421986527537-888d998adb74?w=1024&amp;q=50&amp;fm=jpg&amp;s=e633562a1da53293c4dc391fd41ce41d')"></div>
+      <div class="col-md-12 text-center">
+        <h1 id="title2">I still remember&nbsp;
+          <br>meeting all of you in&nbsp;Grade 7</h1>
+        <p id="e1">不悔离别处，只恨太匆匆。
+          <br>
+        </p>
+        <p id="e2">感谢每一位遇见的老师，引领我们走进知识的浩瀚星空；</p>
+        <p id="e3">&nbsp; &nbsp;感谢243班，让我们在最好地年华，认识最美的彼此；</p>
+        <p id="e4">&nbsp; &nbsp; 感谢每一天，243班的全体一起度过的日子……</p>
+        <p></p>
+        <br>
+        <br>
+      </div>
+    </div>
+    <footer class="section" id="ft">
+      <div class="background-image" style="background-image : url('http://pingendo.github.io/pingendo-bootstrap/assets/blurry/800x600/8.jpg')"></div>
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
@@ -213,7 +272,7 @@
             </div>
             <div class="row">
               <div class="col-md-12 hidden-xs text-right">
-                <a href="点击链接加入群【屌丝的群居地】：http://jq.qq.com/?_wv=1027&amp;k=2GptgKV"><i class="fa fa-3x fa-fw text-inverse fa-qq"></i></a>
+                <a href="点击链接加入群【屌丝的群居地】：http://jq.qq.com/?_wv=1027&amp;k=2GptgKV"><i class="fa fa-3x fa-fw fa-qq text-inverse"></i></a>
                 <a href="#"><i class="fa fa-3x fa-fw text-inverse fa-github"></i></a>
                 <a><i class="fa fa-3x fa-fw hub text-inverse fa-html5"></i></a>
               </div>
@@ -223,49 +282,49 @@
       </div>
     </footer>
     <div class="fade modal" id="myM">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h4 class="modal-title text-info" id="001">照片墙</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="col-md-4">
-                                    <img src="Img\许老师.jpg" class="center-block img-circle img-responsive">
-                                    <h3 class="text-center">英语许老师</h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="Img\尚老师.jpg" class="center-block img-circle img-responsive">
-                                    <h3 class="text-center">物理尚老师</h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="Img\郜老师.jpg" class="center-block img-circle img-responsive">
-                                    <h3 class="text-center">化学郜老师</h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="Img\刘老师.jpg" class="center-block img-circle img-responsive">
-                                    <h3 class="text-center">体育刘老师</h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="Img\200.jpg" class="center-block img-circle img-responsive">
-                                    <h3 class="text-center">政治梁老师</h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <img class="center-block img-circle img-responsive" src="Img\200.jpg">
-                                    <h3 class="text-center">历史范老师</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title text-info" id="001">照片墙</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="col-md-4">
+                  <img src="Img\许老师.jpg" class="center-block img-circle img-responsive">
+                  <h3 class="text-center">英语许老师</h3>
                 </div>
-                <div class="modal-footer"></div>
+                <div class="col-md-4">
+                  <img src="Img\尚老师.jpg" class="center-block img-circle img-responsive">
+                  <h3 class="text-center">物理尚老师</h3>
+                </div>
+                <div class="col-md-4">
+                  <img src="Img\郜老师.jpg" class="center-block img-circle img-responsive">
+                  <h3 class="text-center">化学郜老师</h3>
+                </div>
+                <div class="col-md-4">
+                  <img src="Img\刘老师.jpg" class="center-block img-circle img-responsive">
+                  <h3 class="text-center">体育刘老师</h3>
+                </div>
+                <div class="col-md-4">
+                  <img src="Img\200.jpg" class="center-block img-circle img-responsive">
+                  <h3 class="text-center">政治梁老师</h3>
+                </div>
+                <div class="col-md-4">
+                  <img class="center-block img-circle img-responsive" src="Img\200.jpg">
+                  <h3 class="text-center">历史范老师</h3>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
   
 
 </body></html>
