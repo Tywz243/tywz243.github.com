@@ -9,64 +9,68 @@
     <style type="text/css">
       body,button, input, select, textarea,h2, h3, h4, h5, h6 { font-family: YouYuan;}
       #scrollUp {
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background: #555;
-  color: #fff;
-}
+          bottom: 20px;
+          right: 20px;
+          padding: 10px 20px;
+          background: #555;
+          color: #fff;
+      }
+      #xh {width:1cm;height:1cm}
+      #bh {width:1cm;height:1cm}
     </style>
     <script>
       $(document).ready(function(){
-                      $("#subt").hide();
-                      $("#title2").hide();
-                      $("#e1").hide();
-                      $("#e2").hide();
-                      $("#e3").hide();
-                      $("#e4").hide();
-                      $("#title1").animate({fontSize:'+=2em'},2000,function(){$("#subt").fadeIn(2500);});
-                		$("#leadpage").mouseover(function(){
-                  		$("#leadin").animate({fontSize:'2em'},"fast");
-                		});
-                      $("#pg1").mouseover(function(){
-                        $("#pg1").animate({ opacity:'1'});
-                      });
-                      $("#pg2").mouseover(function(){
-                        $("#pg1").animate({ opacity:'0.3'});
-                        $("#pg2").animate({ opacity:'1'});
-                      });
-                      $("#pg3").mouseover(function(){
-                        $("#pg2").animate({ opacity:'0.3'});
-                        $("#pg3").animate({ opacity:'1'});
-                      });
-                      $("#pg4").mouseover(function(){
-                        $("#pg3").animate({ opacity:'0.3'});
-                        $("#pg4").animate({ opacity:'1'});
-                      });
-                      $("#pg5").mouseover(function(){
-                          $("#pg4").animate({ opacity:'0.3'});
-                          $("#pg5").animate({ opacity:'1'});     
-                          $("#title2").show("slow",function(){$("#e1").fadeIn(3000,function(){
-                      $("#e2").fadeIn(3000,function(){
-                          $("#e3").fadeIn(3000,function(){
-                              $("#e4").fadeIn(3000);
-                          });
-                      });
-                  });});
-                      });
-              	  });
-      $(function () {
-        $.scrollUp({
-          scrollName: 'scrollUp', // Element ID
-          topDistance: '300', // Distance from top before showing element (px)
-          topSpeed: 300, // Speed back to top (ms)
-          animation: 'fade', // Fade, slide, none
-          animationInSpeed: 200, // Animation in speed (ms)
-          animationOutSpeed: 200, // Animation out speed (ms)
-          scrollText: '回到顶部', // Text for element
-          activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-        });
-      });
+        		$("#xh").animate({width:'3cm',height:'3cm',left:'+=3cm'},5000,function(){});
+        		$("#bh").animate({width:'3cm',height:'3cm',right:'+=3c'},5000);
+                              $("#subt").hide();
+                              $("#title2").hide();
+                              $("#e1").hide();
+                              $("#e2").hide();
+                              $("#e3").hide();
+                              $("#e4").hide();
+                              $("#title1").animate({fontSize:'+=2em'},2000,function(){$("#subt").fadeIn(2500);});
+                        		$("#leadpage").mouseover(function(){
+                          		$("#leadin").animate({fontSize:'2em'},"fast");
+                        		});
+                              $("#pg1").mouseover(function(){
+                                $("#pg1").animate({ opacity:'1'});
+                              });
+                              $("#pg2").mouseover(function(){
+                                $("#pg1").animate({ opacity:'0.3'});
+                                $("#pg2").animate({ opacity:'1'});
+                              });
+                              $("#pg3").mouseover(function(){
+                                $("#pg2").animate({ opacity:'0.3'});
+                                $("#pg3").animate({ opacity:'1'});
+                              });
+                              $("#pg4").mouseover(function(){
+                                $("#pg3").animate({ opacity:'0.3'});
+                                $("#pg4").animate({ opacity:'1'});
+                              });
+                              $("#pg5").mouseover(function(){
+                                  $("#pg4").animate({ opacity:'0.3'});
+                                  $("#pg5").animate({ opacity:'1'});     
+                                  $("#title2").show("slow",function(){$("#e1").fadeIn(3000,function(){
+                              $("#e2").fadeIn(3000,function(){
+                                  $("#e3").fadeIn(3000,function(){
+                                      $("#e4").fadeIn(3000);
+                                  });
+                              });
+                          });});
+                              });
+                      	  });
+              $(function () {
+                $.scrollUp({
+                  scrollName: 'scrollUp', // Element ID
+                  topDistance: '300', // Distance from top before showing element (px)
+                  topSpeed: 300, // Speed back to top (ms)
+                  animation: 'fade', // Fade, slide, none
+                  animationInSpeed: 200, // Animation in speed (ms)
+                  animationOutSpeed: 200, // Animation out speed (ms)
+                  scrollText: '回到顶部', // Text for element
+                  activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+                });
+              });
     </script>
   </head><body>
     <div class="cover">
@@ -77,6 +81,14 @@
             <h1 id="title1">Welcome back to home</h1>
             <p id="subt">太原五中243班-2013~2016</p>
             <br>
+            <div class="row">
+              <div class="col-md-6">
+                <img src="Img\校徽.jpg" class="img-responsive img-thumbnail" id="xh" position="fixed">
+              </div>
+              <div class="col-md-6">
+                <img src="Img\班徽.jpg" class="img-responsive img-thumbnail" id="bh" position="fixed">
+              </div>
+            </div>
           </div>
         </div>
       </div>
