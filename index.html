@@ -8,78 +8,104 @@
     <link href="Res\style.css" rel="stylesheet" type="text/css">
     <style type="text/css">
       body,button, input, select, textarea,h2, h3, h4, h5, h6 { font-family: YouYuan;}
-      #scrollUp {
-          bottom: 20px;
-          right: 20px;
-          padding: 10px 20px;
-          background: #555;
-          color: #fff;
-      }
-      #xh {width:1cm;height:1cm}
-      #bh {width:1cm;height:1cm}
+              #scrollUp {
+                  bottom: 20px;
+                  right: 20px;
+                  padding: 10px 20px;
+                  background: #555;
+                  color: #fff;
+              }
+              #xh {width:1cm;height:1cm;opacity:'0'}
+              #bh {width:1cm;height:1cm;opacity:'0'}
     </style>
     <script>
       $(document).ready(function(){
-        		$("#xh").animate({width:'3cm',height:'3cm',left:'+=3cm'},5000,function(){});
-        		$("#bh").animate({width:'3cm',height:'3cm',right:'+=3c'},5000);
-                              $("#subt").hide();
-                              $("#title2").hide();
-                              $("#e1").hide();
-                              $("#e2").hide();
-                              $("#e3").hide();
-                              $("#e4").hide();
-                              $("#title1").animate({fontSize:'+=2em'},2000,function(){$("#subt").fadeIn(2500);});
-                        		$("#leadpage").mouseover(function(){
-                          		$("#leadin").animate({fontSize:'2em'},"fast");
-                        		});
-                              $("#pg1").mouseover(function(){
-                                $("#pg1").animate({ opacity:'1'});
-                              });
-                              $("#pg2").mouseover(function(){
-                                $("#pg1").animate({ opacity:'0.3'});
-                                $("#pg2").animate({ opacity:'1'});
-                              });
-                              $("#pg3").mouseover(function(){
-                                $("#pg2").animate({ opacity:'0.3'});
-                                $("#pg3").animate({ opacity:'1'});
-                              });
-                              $("#pg4").mouseover(function(){
-                                $("#pg3").animate({ opacity:'0.3'});
-                                $("#pg4").animate({ opacity:'1'});
-                              });
-                              $("#pg5").mouseover(function(){
-                                  $("#pg4").animate({ opacity:'0.3'});
-                                  $("#pg5").animate({ opacity:'1'});     
-                                  $("#title2").show("slow",function(){$("#e1").fadeIn(3000,function(){
-                              $("#e2").fadeIn(3000,function(){
-                                  $("#e3").fadeIn(3000,function(){
-                                      $("#e4").fadeIn(3000);
-                                  });
-                              });
-                          });});
-                              });
-                      	  });
-              $(function () {
-                $.scrollUp({
-                  scrollName: 'scrollUp', // Element ID
-                  topDistance: '300', // Distance from top before showing element (px)
-                  topSpeed: 300, // Speed back to top (ms)
-                  animation: 'fade', // Fade, slide, none
-                  animationInSpeed: 200, // Animation in speed (ms)
-                  animationOutSpeed: 200, // Animation out speed (ms)
-                  scrollText: '回到顶部', // Text for element
-                  activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-                });
-              });
+                		$("#xh").animate({width:'3cm',height:'3cm',left:'+=3cm',opacity:'1'},2500,function(){});
+                		$("#bh").animate({width:'3cm',height:'3cm',right:'+=3cm',opacity:'1'},2500,function(){});
+                                      $("#subt").hide();
+                                      $("#title2").hide();
+                                      $("#e1").hide();
+                                      $("#e2").hide();
+                                      $("#e3").hide();
+                                      $("#e4").hide();
+                                      $("#title1").animate({fontSize:'+=2em'},2000,function(){$("#subt").fadeIn(2500);});
+                                		$("#leadpage").mouseover(function(){
+                                  		$("#leadin").animate({fontSize:'2em'},"fast");
+                                		});
+                                      $("#pg1").mouseover(function(){
+                                        $("#pg1").animate({ opacity:'1'});
+                                      });
+                                      $("#pg2").mouseover(function(){
+                                        $("#pg1").animate({ opacity:'0.3'});
+                                        $("#pg2").animate({ opacity:'1'});
+                                      });
+                                      $("#pg3").mouseover(function(){
+                                        $("#pg2").animate({ opacity:'0.3'});
+                                        $("#pg3").animate({ opacity:'1'});
+                                      });
+                                      $("#pg4").mouseover(function(){
+                                        $("#pg3").animate({ opacity:'0.3'});
+                                        $("#pg4").animate({ opacity:'1'});
+                                      });
+                                      $("#pg5").mouseover(function(){
+                                          $("#pg4").animate({ opacity:'0.3'});
+                                          $("#pg5").animate({ opacity:'1'});     
+                                          $("#title2").show("slow",function(){$("#e1").fadeIn(3000,function(){
+                                      $("#e2").fadeIn(3000,function(){
+                                          $("#e3").fadeIn(3000,function(){
+                                              $("#e4").fadeIn(3000);
+                                          });
+                                      });
+                                  });});
+                                      });
+                              	  });
+                      $(function () {
+                        $.scrollUp({
+                          scrollName: 'scrollUp', // Element ID
+                          topDistance: '300', // Distance from top before showing element (px)
+                          topSpeed: 300, // Speed back to top (ms)
+                          animation: 'fade', // Fade, slide, none
+                          animationInSpeed: 200, // Animation in speed (ms)
+                          animationOutSpeed: 200, // Animation out speed (ms)
+                          scrollText: '回到顶部', // Text for element
+                          activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+                        });
+                      });
     </script>
   </head><body>
     <div class="cover">
+      <div class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand"><img height="20" alt="Brand" src="Img\班徽.jpg" class="img-circle"></a>
+          </div>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active">
+                <a href="#">主页</a>
+              </li>
+              <li>
+                <a href="notice.html">通知</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="cover-image" style="background-image : url('https://unsplash.imgix.net/photo-1422022098106-b3a9edc463af?w=1024&amp;q=50&amp;fm=jpg&amp;s=bbe0beb19ba846e0de37abd1f63acf13')"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
             <h1 id="title1">Welcome back to home</h1>
             <p id="subt">太原五中243班-2013~2016</p>
+            <div class="alert alert-danger alert-dismissable"><button contenteditable="false" type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+              <b>近日，我班多名同学遭到太原博奥教育培训学校的无理侵权！抗议书已发至负责人邮箱、家长帮和本站通知部分（<a href="notice.html">点此查看</a>）。</b>
+            </div>
             <br>
             <div class="row">
               <div class="col-md-6">
@@ -287,11 +313,9 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
-            <h1>太原五中243班</h1>
-            <p>2013-2016
-              <br>
-              <br>
-            </p>
+            <h1>太原五中243班</h1>本页面使用bootstrap强力驱动，遵循GPL V2.0，但不包括所使用的本班同学及老师照片。
+            <br>Copyright(C) 2013-2016，all rights reserved
+            <p></p>
           </div>
           <div class="col-sm-6">
             <p class="text-info text-right">
@@ -308,8 +332,8 @@
             </div>
             <div class="row">
               <div class="col-md-12 hidden-xs text-right">
-                <a href="点击链接加入群【屌丝的群居地】：http://jq.qq.com/?_wv=1027&amp;k=2GptgKV"><i class="fa fa-3x fa-fw fa-qq text-inverse"></i></a>
-                <a href="#"><i class="fa fa-3x fa-fw text-inverse fa-github"></i></a>
+                <a href="http://jq.qq.com/?_wv=1027&amp;k=2GptgKV"><i class="fa fa-3x fa-fw fa-qq text-inverse"></i></a>
+                <a href="#"><i class="fa fa-3x fa-fw fa-github fa-spin text-inverse"></i></a>
                 <a><i class="fa fa-3x fa-fw hub text-inverse fa-html5"></i></a>
               </div>
             </div>
