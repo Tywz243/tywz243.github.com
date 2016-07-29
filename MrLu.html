@@ -7,12 +7,16 @@
     <link href="Res\style4.css" rel="stylesheet" type="text/css">
     <script>
       $(document).ready(function(){
-                $(".panel-body").hide();
-                $(".panel").click(function(){
-                  	var sub = $(this).children(".panel-body");
-                	sub.slideToggle("slow");
-        		});
-              });
+                        $(".panel-body").hide();
+                        $(".panel").click(function(){
+                          	var sub = $(this).children(".panel-body");
+                        	sub.slideToggle("slow");
+                		});
+        				$("#search-button").click(function(){
+                        	var str = $("#search").val();
+                          	window.open("http://www.baidu.com/s?si=www.fzlsk.com&cl=3&ct=2097152&tn=baidulocal&word="+str);
+                        });
+                      });
     </script>
   </head><body>
     <div class="cover">
@@ -46,8 +50,54 @@
             <h1>
               <i class="fa fa-fw fa-star text-warning"></i>路爷爷语录</h1>
             <p>最高指示——一切压轴题都是纸老虎</p>
-            <br>
-            <br>
+            <form action="http://www.baidu.com/baidu" target="_blank">
+              <table bgcolor="#FFFFFF">
+                <tbody>
+                  <tr></tr>
+                </tbody>
+              </table>
+            </form>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <hr>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h2 class="text-center">Search 搜索</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                  <form role="form">
+                    <div class="form-group" id="search">
+                      <div class="input-group">
+                        <input type="search" class="form-control" placeholder="Enter key-words">
+                        <span class="input-group-btn">
+                          <a class="btn btn-danger" type="submit" id="search-button" contenteditable="true">Go</a>
+                        </span>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-header">
+              <i class="fa fa-3x fa-connectdevelop fa-fw fa-spin pull-left"></i>
+              <span style="color: inherit; font-family: Montserrat; font-size: 36px; line-height: 1.1;">路爷爷教导我们：</span>
+            </div>
+            <blockquote>
+              <p>凡是路爷爷做出的决策，我们都坚决维护；凡是路爷爷的指示，我们都矢志不渝地遵循。</p>
+            </blockquote>
           </div>
         </div>
       </div>
@@ -103,7 +153,7 @@
               <li class="list-group-item">44.我们以前的同学，做过（停顿/思考）几百次实验，你们行么？你们行么？</li>
               <li class="list-group-item">45.朽木！</li>
               <li class="list-group-item">46.（正经脸）笑什么笑，有什么好笑的？</li>
-              <li class="list-group-item">47.学生写作业天经地义，家长检查义不容辞，我批评你们责无旁贷。</li>
+              <li class="list-group-item">47.学生写作业天经地义，家长检查义不容辞，我批评你们责无旁贷。如果你们不完成作业，我就要把你们骂的狗血喷头、体无完肤</li>
               <li class="list-group-item">48.你们对数学没有一点敬畏之心！</li>
               <li class="list-group-item">49.特例归纳，建立猜想，符号表达。</li>
               <li class="list-group-item">50.没本？就不会写在纸上贴上去？</li>
