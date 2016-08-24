@@ -8,69 +8,69 @@
     <link href="Res\style.css" rel="stylesheet" type="text/css">
     <style type="text/css">
       body,button, input, select, textarea,h2, h3, h4, h5, h6 { font-family: YouYuan;}
-                      #scrollUp {
-                          bottom: 20px;
-                          right: 20px;
-                          padding: 10px 20px;
-                          background: #555;
-                          color: #fff;
-                      }
-                      #xh {width:1cm;height:1cm;opacity:'0'}
-                      #bh {width:1cm;height:1cm;opacity:'0'}
+                              #scrollUp {
+                                  bottom: 20px;
+                                  right: 20px;
+                                  padding: 10px 20px;
+                                  background: #555;
+                                  color: #fff;
+                              }
+                              #xh {width:1cm;height:1cm;opacity:'0'}
+                              #bh {width:1cm;height:1cm;opacity:'0'}
     </style>
     <script>
       $(document).ready(function(){
-                        		$("#xh").animate({width:'3cm',height:'3cm',left:'+=3cm',opacity:'1'},2500,function(){});
-                        		$("#bh").animate({width:'3cm',height:'3cm',right:'+=3cm',opacity:'1'},2500,function(){});
-                                              $("#subt").hide();
-                                              $("#title2").hide();
-                                              $("#e1").hide();
-                                              $("#e2").hide();
-                                              $("#e3").hide();
-                                              $("#e4").hide();
-                                              $("#title1").animate({fontSize:'+=2em'},2000,function(){$("#subt").fadeIn(2500);});
-                                        		$("#leadpage").mouseover(function(){
-                                          		$("#leadin").animate({fontSize:'2em'},"fast");
-                                        		});
-                                              $("#pg1").mouseover(function(){
-                                                $("#pg1").animate({ opacity:'1'});
-                                              });
-                                              $("#pg2").mouseover(function(){
-                                                $("#pg1").animate({ opacity:'0.3'});
-                                                $("#pg2").animate({ opacity:'1'});
-                                              });
-                                              $("#pg3").mouseover(function(){
-                                                $("#pg2").animate({ opacity:'0.3'});
-                                                $("#pg3").animate({ opacity:'1'});
-                                              });
-                                              $("#pg4").mouseover(function(){
-                                                $("#pg3").animate({ opacity:'0.3'});
-                                                $("#pg4").animate({ opacity:'1'});
-                                              });
-                                              $("#pg5").mouseover(function(){
-                                                  $("#pg4").animate({ opacity:'0.3'});
-                                                  $("#pg5").animate({ opacity:'1'});     
-                                                  $("#title2").show("slow",function(){$("#e1").fadeIn(3000,function(){
-                                              $("#e2").fadeIn(3000,function(){
-                                                  $("#e3").fadeIn(3000,function(){
-                                                      $("#e4").fadeIn(3000);
-                                                  });
-                                              });
-                                          });});
-                                              });
-                                      	  });
-                              $(function () {
-                                $.scrollUp({
-                                  scrollName: 'scrollUp', // Element ID
-                                  topDistance: '300', // Distance from top before showing element (px)
-                                  topSpeed: 300, // Speed back to top (ms)
-                                  animation: 'fade', // Fade, slide, none
-                                  animationInSpeed: 200, // Animation in speed (ms)
-                                  animationOutSpeed: 200, // Animation out speed (ms)
-                                  scrollText: '回到顶部', // Text for element
-                                  activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-                                });
-                              });
+                                		$("#xh").animate({width:'3cm',height:'3cm',left:'+=3cm',opacity:'1'},2500,function(){});
+                                		$("#bh").animate({width:'3cm',height:'3cm',right:'+=3cm',opacity:'1'},2500,function(){});
+                                                      $("#subt").hide();
+                                                      $("#title2").hide();
+                                                      $("#e1").hide();
+                                                      $("#e2").hide();
+                                                      $("#e3").hide();
+                                                      $("#e4").hide();
+                                                      $("#title1").animate({fontSize:'+=2em'},2000,function(){$("#subt").fadeIn(2500);});
+                                                		$("#leadpage").mouseover(function(){
+                                                  		$("#leadin").animate({fontSize:'2em'},"fast");
+                                                		});
+                                                      $("#pg1").mouseover(function(){
+                                                        $("#pg1").animate({ opacity:'1'});
+                                                      });
+                                                      $("#pg2").mouseover(function(){
+                                                        $("#pg1").animate({ opacity:'0.3'});
+                                                        $("#pg2").animate({ opacity:'1'});
+                                                      });
+                                                      $("#pg3").mouseover(function(){
+                                                        $("#pg2").animate({ opacity:'0.3'});
+                                                        $("#pg3").animate({ opacity:'1'});
+                                                      });
+                                                      $("#pg4").mouseover(function(){
+                                                        $("#pg3").animate({ opacity:'0.3'});
+                                                        $("#pg4").animate({ opacity:'1'});
+                                                      });
+                                                      $("#pg5").mouseover(function(){
+                                                          $("#pg4").animate({ opacity:'0.3'});
+                                                          $("#pg5").animate({ opacity:'1'});     
+                                                          $("#title2").show("slow",function(){$("#e1").fadeIn(3000,function(){
+                                                      $("#e2").fadeIn(3000,function(){
+                                                          $("#e3").fadeIn(3000,function(){
+                                                              $("#e4").fadeIn(3000);
+                                                          });
+                                                      });
+                                                  });});
+                                                      });
+                                              	  });
+                                      $(function () {
+                                        $.scrollUp({
+                                          scrollName: 'scrollUp', // Element ID
+                                          topDistance: '300', // Distance from top before showing element (px)
+                                          topSpeed: 300, // Speed back to top (ms)
+                                          animation: 'fade', // Fade, slide, none
+                                          animationInSpeed: 200, // Animation in speed (ms)
+                                          animationOutSpeed: 200, // Animation out speed (ms)
+                                          scrollText: '回到顶部', // Text for element
+                                          activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+                                        });
+                                      });
     </script>
   </head><body>
     <div class="cover">
@@ -97,7 +97,7 @@
           </div>
         </div>
       </div>
-      <div class="cover-image" style="background-image : url('https://unsplash.imgix.net/photo-1422022098106-b3a9edc463af?w=1024&amp;q=50&amp;fm=jpg&amp;s=bbe0beb19ba846e0de37abd1f63acf13')"></div>
+      <div class="background-image-fixed cover-image" style="background-image : url('https://unsplash.imgix.net/photo-1422022098106-b3a9edc463af?w=1024&amp;q=50&amp;fm=jpg&amp;s=bbe0beb19ba846e0de37abd1f63acf13')"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -122,7 +122,7 @@
       </div>
     </div>
     <div class="section section-primary" id="leadpage">
-      <div class="background-image" style="background-image : url('https://unsplash.imgix.net/reserve/N13RIliTTASBbuYyszgq_P9020914-54.jpg?w=1024&amp;q=50&amp;fm=jpg&amp;s=9c914a5c9288fc66860fde2c45521ff4')"></div>
+      <div class="background-image background-image-fixed" style="background-image : url('https://unsplash.imgix.net/reserve/N13RIliTTASBbuYyszgq_P9020914-54.jpg?w=1024&amp;q=50&amp;fm=jpg&amp;s=9c914a5c9288fc66860fde2c45521ff4')"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -147,7 +147,7 @@
       </div>
     </div>
     <div class="section" id="pg1">
-      <div class="background-image" style="background-image : url('https://unsplash.imgix.net/photo-1422513391413-ddd4f2ce3340?w=1024&amp;q=50&amp;fm=jpg&amp;s=282e5978de17d6cd2280888d16f06f04')"></div>
+      <div class="background-image background-image-fixed" style="background-image : url('https://unsplash.imgix.net/photo-1422513391413-ddd4f2ce3340?w=1024&amp;q=50&amp;fm=jpg&amp;s=282e5978de17d6cd2280888d16f06f04')"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-6">
@@ -173,7 +173,7 @@
       </div>
     </div>
     <div class="section" id="pg2">
-      <div class="background-image" style="background-image : url('https://unsplash.imgix.net/photo-1423347834838-5162bb452ca7?w=1024&amp;q=50&amp;fm=jpg&amp;s=c255e589621f06513c1d123c7323fe9c')"></div>
+      <div class="background-image background-image-fixed" style="background-image : url('https://unsplash.imgix.net/photo-1423347834838-5162bb452ca7?w=1024&amp;q=50&amp;fm=jpg&amp;s=c255e589621f06513c1d123c7323fe9c')"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -197,7 +197,7 @@
       </div>
     </div>
     <div class="section section-primary" id="pg3">
-      <div class="background-image" style="background-image : url('https://unsplash.imgix.net/photo-1423439793616-f2aa4356b37e?w=1024&amp;q=50&amp;fm=jpg&amp;s=3b42f9c018b2712544debf4d6a4998ff')"></div>
+      <div class="background-image background-image-fixed" style="background-image : url('https://unsplash.imgix.net/photo-1423439793616-f2aa4356b37e?w=1024&amp;q=50&amp;fm=jpg&amp;s=3b42f9c018b2712544debf4d6a4998ff')"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -257,7 +257,7 @@
       </div>
     </div>
     <div class="section section-warning" id="pg4">
-      <div class="background-image" style="background-image : url('https://unsplash.imgix.net/uploads/14129863345840df499fc/0165574c?w=1024&amp;q=50&amp;fm=jpg&amp;s=6e5127e797feb9b5a72f7ae4a0f3a89b')"></div>
+      <div class="background-image background-image-fixed" style="background-image : url('https://unsplash.imgix.net/uploads/14129863345840df499fc/0165574c?w=1024&amp;q=50&amp;fm=jpg&amp;s=6e5127e797feb9b5a72f7ae4a0f3a89b')"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -295,7 +295,7 @@
       </div>
     </div>
     <div class="cover" id="pg5">
-      <div class="cover-image" style="background-image : url('https://unsplash.imgix.net/photo-1421986527537-888d998adb74?w=1024&amp;q=50&amp;fm=jpg&amp;s=e633562a1da53293c4dc391fd41ce41d')"></div>
+      <div class="background-image-fixed cover-image" style="background-image : url('https://unsplash.imgix.net/photo-1421986527537-888d998adb74?w=1024&amp;q=50&amp;fm=jpg&amp;s=e633562a1da53293c4dc391fd41ce41d')"></div>
       <div class="col-md-12 text-center">
         <h1 id="title2">I still remember&nbsp;
           <br>meeting all of you in&nbsp;Grade 7</h1>
@@ -311,7 +311,7 @@
       </div>
     </div>
     <footer class="section" id="ft">
-      <div class="background-image" style="background-image : url('http://pingendo.github.io/pingendo-bootstrap/assets/blurry/800x600/8.jpg')"></div>
+      <div class="background-image background-image-fixed" style="background-image : url('http://pingendo.github.io/pingendo-bootstrap/assets/blurry/800x600/8.jpg')"></div>
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
